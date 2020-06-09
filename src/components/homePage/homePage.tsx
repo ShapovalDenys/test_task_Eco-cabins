@@ -42,8 +42,8 @@ const HomePage = () => (
         </p>
       </div>
     </section>
-    <section id="characteristics" className="characteristics">
-      <img className="characteristics__img" src="./img/house.jpg" alt="house" />
+    <section className="characteristics">
+      <img id="characteristics" className="characteristics__img" src="./img/house.jpg" alt="house" />
       <div className="characteristics__description">
         <div className="characteristics__description-item">
           <h3>Hout</h3>
