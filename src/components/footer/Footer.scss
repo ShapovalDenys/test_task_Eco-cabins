@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  margin-top: -110px;
+  margin: -110px auto;
   max-width: 800px;
   height: 92px;
   padding: 0 100px;
@@ -26,6 +25,21 @@
     transition: 0.3s;
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer__nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    justify-content: center;
+    &__link {
+      display: none;
     }
   }
 }

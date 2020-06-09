@@ -17,7 +17,7 @@ const Header = () => (
       </div>
       <div className="content-wrap__video">
         <a href="https://www.youtube.com/watch?v=lNKhtAXchP0" className="content-wrap__video-box-link">
-          <img src="./img/BTNPlay.svg" alt="button play" />
+          <img src="./img/BTNPlay.svg" alt="button play" className="content-wrap__video-box-img" />
           Bekijk de film
         </a>
       </div>
