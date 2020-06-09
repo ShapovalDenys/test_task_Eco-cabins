@@ -1,17 +1,18 @@
 .main {
-  max-width: 1130px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .duurzame-materialen {
   position: relative;
   display: flex;
+  left: -1px;
   &__wrap {
     position: relative;
     top: -40px;
     padding-top: 62px;
     padding-left: 100px;
-    width: 646px;
+    width: 516px;
     height: 330px;
     background-color: white;
     z-index: 1;
@@ -54,7 +55,7 @@
 .innovatie {
   position: relative;
   top: -200px;
-  max-width: 1130px;
+  max-width: 1000px;
   background: #222f33;
   padding: 240px 100px 78px;
   &__description {
@@ -62,7 +63,7 @@
     justify-content: space-between;
     & p {
       display: inline-block;
-      max-width: 400px;
+      max-width: 380px;
       font-size: 14px;
       line-height: 24px;
       opacity: 0.7;
@@ -74,5 +75,40 @@
     font-size: 30px;
     line-height: 38px;
     color: #fff;
+  }
+}
+
+.characteristics {
+  position: relative;
+  padding: 100px 100px 0;
+  top: -200px;
+  display: flex;
+  justify-content: space-between;
+  &__img {
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__description {
+    display: grid;
+    grid-template-columns: repeat(2, 155px);
+    grid-column-gap: 60px;
+    grid-row-gap: 25px;
+  }
+  &__description-item {
+    & h3 {
+      font-family: "Merriweather", serif;
+      font-size: 18px;
+      line-height: 23px;
+      color: #222f33;
+    }
+    & p {
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 22px;
+      opacity: 0.7;
+      color: #646d70;
+    }
   }
 }

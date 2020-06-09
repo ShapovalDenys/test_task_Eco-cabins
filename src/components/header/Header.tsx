@@ -4,7 +4,7 @@ import './Header.scss';
 import Navigation from '../navigation/Navigation';
 
 const Header = () => (
-  <section className="header">
+  <section id="home" className="header">
     <Navigation />
     <div className="header__content content-wrap">
       <div className="content-wrap__description">
@@ -23,13 +23,13 @@ const Header = () => (
       </div>
       <ul className="content-wrap__socials">
         <li className="content-wrap__socials-item">
-          <a className="content-wrap__socials-link" href="#home">Instagram</a>
+          <a className="content-wrap__socials-link" href="https://www.instagram.com/__aspire__/">Instagram</a>
         </li>
         <li className="content-wrap__socials-item">
-          <a className="content-wrap__socials-link" href="#home">Facebook</a>
+          <a className="content-wrap__socials-link" href="https://www.facebook.com/vkontaktedenshapoval">Facebook</a>
         </li>
         <li className="content-wrap__socials-item">
-          <a className="content-wrap__socials-link" href="#home">Linkedin</a>
+          <a className="content-wrap__socials-link" href="https://www.linkedin.com/in/denys-shapoval-831a74143/">Linkedin</a>
         </li>
       </ul>
     </div>
