@@ -1,0 +1,122 @@
+.header {
+  max-width: 1130px;
+  height: 636px;
+  margin: 0 auto;
+  background-image: url(./header-img.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.content-wrap {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 128px;
+  display: flex;
+  align-items: center;
+  &__description {
+    max-width: 440px;
+    color: #fff;
+    & h1 {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+      opacity: 80%;
+    }
+    & p {
+      font-family: "Merriweather", serif;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 38px;
+      margin-top: 12px;
+    }
+  }
+  &__video {
+    margin-left: 195px;
+    &-box-link {
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__socials {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -185px;
+    &-item {
+      display: inline-block;
+      margin-right: 40px;
+    }
+    & :last-child {
+      margin-right: 0;
+    }
+    &-link {
+      color: #fff;
+      line-height: 40px;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 10px;
+      transition: 0.3s;
+      &:hover {
+        -webkit-animation: swing 0.6s ease;
+        animation: swing 0.6s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+      }
+    }
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

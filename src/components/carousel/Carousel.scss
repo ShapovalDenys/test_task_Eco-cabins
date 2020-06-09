@@ -1,0 +1,42 @@
+.carousel {
+  position: absolute;
+  max-width: 325px;
+  height: 366px;
+  top: -130px;
+  right: 100px;
+  z-index: 2;
+  &__block {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 40px;
+    width: 325px;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+  }
+}
+
+.slider {
+  &-points {
+    position: relative;
+    bottom: 45px;
+    left: calc(50% - 31px);
+  }
+  &-point {
+    display: inline-block;
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.6;
+  }
+}
+
+.avtive-point {
+  opacity: 1;
+}
