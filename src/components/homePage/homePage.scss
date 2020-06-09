@@ -1,6 +1,7 @@
+@import "../css-config.scss";
+
 .main {
-  max-width: 1000px;
-  margin: 0 auto;
+  @include mainSectionSize;
 }
 
 .duurzame-materialen {
@@ -42,7 +43,7 @@
       font-weight: 500;
       font-size: 12px;
       margin-top: 5px;
-      transition: 0.3s;
+      transition: $TransitionDuration;
       &:hover {
         background-color: #646d70;
         color: white;
@@ -84,7 +85,7 @@
   display: flex;
   justify-content: space-between;
   &__img {
-    transition: 0.3s;
+    transition: $TransitionDuration;
     &:hover {
       transform: scale(1.05);
     }
@@ -112,7 +113,7 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: $tabletScreenResolution) {
   .duurzame-materialen {
     &__description {
       max-width: 330px;
@@ -147,7 +148,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: $smartfoneScreenResolution) {
   .duurzame-materialen {
     &__wrap {
       display: flex;
@@ -171,7 +172,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: $mobileScreenResolution) {
   .characteristics {
     &__description {
       text-align: center;

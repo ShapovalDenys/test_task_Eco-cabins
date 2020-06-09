@@ -1,3 +1,4 @@
+@import "../css-config.scss";
 
 .bm-item {
   display: inline-block;
@@ -54,8 +55,12 @@
   background: rgba(157, 247, 250, 0.2);
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: $tabletScreenResolution) {
   .bm-burger-button {
     display: inline-block;
   }
+}
+
+.socials {
+  margin-top: 30px;
 }

@@ -1,3 +1,5 @@
+@import "../css-config.scss";
+
 .footer {
   display: flex;
   align-items: center;
@@ -22,20 +24,20 @@
     color: #fff;
     opacity: 0.6;
     line-height: 40px;
-    transition: 0.3s;
+    transition: $TransitionDuration;
     &:hover {
       opacity: 1;
     }
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: $smartfoneScreenResolution) {
   .footer__nav {
     display: none;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: $mobileScreenResolution) {
   .footer {
     justify-content: center;
     &__link {

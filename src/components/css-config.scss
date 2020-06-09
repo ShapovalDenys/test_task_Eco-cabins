@@ -1,0 +1,11 @@
+$tabletScreenResolution: 950px;  //tablet screen resolution//
+$smartfoneScreenResolution: 750px;  //mobile screen resolution//
+$mobileScreenResolution: 550px;  //mobile screen resolution//
+
+$TransitionDuration: 0.3s; //Transition duration//
+
+//Main section size//
+@mixin mainSectionSize {
+  max-width: 1000px;
+  margin: 0 auto;
+}

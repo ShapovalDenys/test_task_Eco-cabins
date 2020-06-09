@@ -1,7 +1,8 @@
+@import "../css-config.scss";
+
 .header {
-  max-width: 1000px;
+  @include mainSectionSize;
   height: 636px;
-  margin: 0 auto;
   background-image: url(./header-img.png);
   background-size: cover;
   background-position: center;
@@ -55,7 +56,7 @@
       display: inline-block;
       font-weight: 500;
       font-size: 10px;
-      transition: 0.3s;
+      transition: $TransitionDuration;
       &:hover {
         -webkit-animation: swing 0.6s ease;
         animation: swing 0.6s ease;
@@ -120,7 +121,7 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: $tabletScreenResolution) {
   .content-wrap {
     max-width: 700px;
     &__socials {
@@ -132,7 +133,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: $smartfoneScreenResolution) {
   .content-wrap {
     flex-direction: column;
     &__video {
@@ -147,7 +148,7 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: $mobileScreenResolution) {
   .content-wrap {
     &__description {
       margin: 0 10px;

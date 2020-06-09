@@ -39,6 +39,15 @@ export default (props: Props) => {
           <li className="navigation__item">
             <a href="mailto:info@eco-cabins.com" className="navigation__link">Contact</a>
           </li>
+          <li className="navigation__item socials">
+          <a className="navigation__link" href="https://www.instagram.com/__aspire__/">Instagram</a>
+        </li>
+        <li className="navigation__item">
+          <a className="navigation__link" href="https://www.facebook.com/vkontaktedenshapoval">Facebook</a>
+        </li>
+        <li className="navigation__item">
+          <a className="navigation__link" href="https://www.linkedin.com/in/denys-shapoval-831a74143/">Linkedin</a>
+        </li>
         </ul>
       </Menu>
     </>

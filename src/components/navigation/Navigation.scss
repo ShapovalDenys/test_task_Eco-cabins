@@ -1,3 +1,5 @@
+@import "../css-config.scss";
+
 .navigation {
   max-width: 800px;
   margin: 0 auto;
@@ -5,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   &__logo-link {
-    transition: 0.3s;
+    transition: $TransitionDuration;
     &:hover {
       transform: scale(1.03);
     }
@@ -24,7 +26,7 @@
     color: #fff;
     padding: 0 10px;
     border: 1px solid transparent;
-    transition: 0.3s;
+    transition: $TransitionDuration;
     &:hover {
       border-color: white;
       border-radius: 4px;
@@ -53,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: $tabletScreenResolution) {
   .navigation {
     &__logo-link {
       margin-left: 30px;
